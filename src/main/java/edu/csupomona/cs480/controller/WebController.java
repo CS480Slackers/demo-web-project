@@ -56,6 +56,17 @@ public class WebController {
 	String helloWorld() {
 		return "Hello World!!";
 	}
+	
+	/**
+	 * HTTP Get request: return a simply string
+	 */
+	@RequestMapping(value = "/cs480/Slackers/Andy", method = RequestMethod.GET)
+	String displayName() {
+		// You can replace this with other string,
+		// and run the application locally to check your changes
+		// with the URL: http://localhost:8080/
+		return "Hi, My name is Andy, a member in team Slackers!";
+	}
 
 	/**
 	 * This is a simple example of how to use a data manager
