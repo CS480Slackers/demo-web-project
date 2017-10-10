@@ -52,6 +52,14 @@ public class WebController {
 		return "OK";
 	}
 	
+	@RequestMapping(value = "/cs480/Roland", method = RequestMethod.GET)
+	String displayRoland() {
+		// You can replace this with other string,
+		// and run the application locally to check your changes
+		// with the URL: http://localhost:8080/
+		return "Hi there! I'm Roland, a member of team Slackers!";
+	}
+	
 	@RequestMapping(value = "/cs480/helloworld", method = RequestMethod.GET)
 	String helloWorld() {
 		return "Hello World!!";
